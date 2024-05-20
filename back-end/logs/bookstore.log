@@ -249,3 +249,25 @@
 2024-05-20T11:03:14Z [Information] Retrieved 1 group names
 2024-05-20T11:03:14Z [Information] Retrieved 1 group names
 2024-05-20T11:05:48Z [Information] Retrieved 1 group names
+2024-05-20T16:38:19Z [Information] Application is shutting down...
+2024-05-20T16:38:28Z [Information] Now listening on: http://localhost:5210
+2024-05-20T16:38:28Z [Information] Application started. Press Ctrl+C to shut down.
+2024-05-20T16:38:28Z [Information] Hosting environment: Development
+2024-05-20T16:38:28Z [Information] Content root path: C:\Users\Danni\source\repos\MemoryCards\test\MemoryCards\back-end
+2024-05-20T16:39:34Z [Information] Application is shutting down...
+2024-05-20T16:39:52Z [Information] Now listening on: https://localhost:7186
+2024-05-20T16:39:52Z [Information] Now listening on: http://localhost:5210
+2024-05-20T16:39:52Z [Information] Application started. Press Ctrl+C to shut down.
+2024-05-20T16:39:52Z [Information] Hosting environment: Development
+2024-05-20T16:39:52Z [Information] Content root path: C:\Users\Danni\source\repos\MemoryCards\test\MemoryCards\back-end
+2024-05-20T16:39:58Z [Information] Retrieved 0 group names
+2024-05-20T16:39:58Z [Information] Retrieved 0 group names
+2024-05-20T16:40:32Z [Information] Created a new group with 7 cards
+2024-05-20T16:40:32Z [Information] Added card with details: StudyGroups.WebApi.Database.Models.Card
+2024-05-20T16:40:32Z [Information] Added card with details: StudyGroups.WebApi.Database.Models.Card
+2024-05-20T16:40:32Z [Information] Added card with details: StudyGroups.WebApi.Database.Models.Card
+2024-05-20T16:40:32Z [Information] Added card with details: StudyGroups.WebApi.Database.Models.Card
+2024-05-20T16:40:32Z [Information] Added card with details: StudyGroups.WebApi.Database.Models.Card
+2024-05-20T16:40:32Z [Information] Added card with details: StudyGroups.WebApi.Database.Models.Card
+2024-05-20T16:40:32Z [Information] Added card with details: StudyGroups.WebApi.Database.Models.Card
+2024-05-20T16:40:32Z [Information] Retrieved 1 group names
