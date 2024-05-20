@@ -1,0 +1,50 @@
+body {
+  background-color: rgb(26,22,22) !important;
+  
+}
+
+.App{
+  max-width: 900px;
+  margin: auto ;
+}
+
+h2 {
+  color: whitesmoke;
+}
+
+.drop-zone {
+  border: 2px dashed black;
+  border-radius: 5px;
+  padding:75px;
+  margin: 1rem;
+  text-align: center;
+  font-size: xx-large
+}
+
+.card{
+  margin: 1rem;
+  height: 500px !important;
+  cursor: pointer;
+  transition: transfrom 0.9s;
+  transform-style: preserve-3d;
+
+}
+
+.card-front {
+  background-color: yellowgreen !important;
+}
+
+.card-back {
+  background-color:aquamarine !important;
+}
+
+.flip {
+  transform: rotateY(180deg);
+}
+
+.content{
+  text-align: center;
+  top: 47%;
+  position: relative;
+  backface-visibility: hidden;
+}
