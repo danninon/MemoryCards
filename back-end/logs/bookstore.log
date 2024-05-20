@@ -1,0 +1,251 @@
+2024-05-19T12:27:22Z [Information] Now listening on: https://localhost:7186
+2024-05-19T12:27:22Z [Information] Now listening on: http://localhost:5210
+2024-05-19T12:27:22Z [Information] Application started. Press Ctrl+C to shut down.
+2024-05-19T12:27:22Z [Information] Hosting environment: Development
+2024-05-19T12:27:22Z [Information] Content root path: C:\Users\Danni\source\repos\StudyGroups.WebApi\StudyGroups.WebApi
+2024-05-19T12:27:31Z [Information] Retrieved 4 group names
+2024-05-19T12:27:31Z [Error] An unhandled exception has occurred while executing the request.
+2024-05-19T12:33:04Z [Information] Now listening on: https://localhost:7186
+2024-05-19T12:33:04Z [Information] Now listening on: http://localhost:5210
+2024-05-19T12:33:04Z [Information] Application started. Press Ctrl+C to shut down.
+2024-05-19T12:33:04Z [Information] Hosting environment: Development
+2024-05-19T12:33:04Z [Information] Content root path: C:\Users\Danni\source\repos\StudyGroups.WebApi\StudyGroups.WebApi
+2024-05-19T12:36:04Z [Information] Now listening on: https://localhost:7186
+2024-05-19T12:36:04Z [Information] Now listening on: http://localhost:5210
+2024-05-19T12:36:04Z [Information] Application started. Press Ctrl+C to shut down.
+2024-05-19T12:36:04Z [Information] Hosting environment: Development
+2024-05-19T12:36:04Z [Information] Content root path: C:\Users\Danni\source\repos\StudyGroups.WebApi\StudyGroups.WebApi
+2024-05-19T12:36:08Z [Information] Retrieved 4 group names
+2024-05-19T12:37:05Z [Information] Created a new group with 1 cards
+2024-05-19T12:38:01Z [Information] Created a new group with 7 cards
+2024-05-19T12:39:50Z [Information] Now listening on: https://localhost:7186
+2024-05-19T12:39:50Z [Information] Now listening on: http://localhost:5210
+2024-05-19T12:39:50Z [Information] Application started. Press Ctrl+C to shut down.
+2024-05-19T12:39:50Z [Information] Hosting environment: Development
+2024-05-19T12:39:50Z [Information] Content root path: C:\Users\Danni\source\repos\StudyGroups.WebApi\StudyGroups.WebApi
+2024-05-19T12:40:46Z [Information] Retrieved 5 group names
+2024-05-19T13:13:59Z [Information] Now listening on: https://localhost:7186
+2024-05-19T13:13:59Z [Information] Now listening on: http://localhost:5210
+2024-05-19T13:13:59Z [Information] Application started. Press Ctrl+C to shut down.
+2024-05-19T13:13:59Z [Information] Hosting environment: Development
+2024-05-19T13:13:59Z [Information] Content root path: C:\Users\Danni\source\repos\StudyGroups.WebApi\StudyGroups.WebApi
+2024-05-19T13:14:04Z [Information] Retrieved 5 group names
+2024-05-19T13:14:04Z [Information] Retrieved 5 group names
+2024-05-19T13:15:06Z [Information] Retrieved 5 group names
+2024-05-19T13:15:07Z [Information] Retrieved 5 group names
+2024-05-19T13:15:07Z [Information] Retrieved 5 group names
+2024-05-19T13:15:52Z [Information] Deleted group 5
+2024-05-19T13:15:52Z [Information] Retrieved 4 group names
+2024-05-19T13:15:53Z [Information] Deleted group group1
+2024-05-19T13:15:53Z [Information] Retrieved 3 group names
+2024-05-19T13:17:44Z [Information] Retrieved 3 group names
+2024-05-19T13:17:44Z [Information] Retrieved 3 group names
+2024-05-19T13:26:53Z [Information] Retrieved 3 group names
+2024-05-19T13:26:53Z [Information] Retrieved 3 group names
+2024-05-19T13:28:01Z [Information] Retrieved 3 group names
+2024-05-19T13:28:01Z [Information] Retrieved 3 group names
+2024-05-19T13:29:34Z [Information] Retrieved 3 group names
+2024-05-19T13:29:34Z [Information] Retrieved 3 group names
+2024-05-19T13:29:47Z [Information] Retrieved 3 group names
+2024-05-19T13:29:47Z [Information] Retrieved 3 group names
+2024-05-19T13:32:44Z [Information] Deleted group string
+2024-05-19T13:32:44Z [Information] Retrieved 3 group names
+2024-05-19T13:32:45Z [Information] Deleted group string
+2024-05-19T13:32:45Z [Information] Retrieved 2 group names
+2024-05-19T13:32:46Z [Information] Deleted group string1
+2024-05-19T13:32:46Z [Information] Retrieved 2 group names
+2024-05-19T13:32:47Z [Information] Deleted group string1
+2024-05-19T13:32:47Z [Information] Retrieved 1 group names
+2024-05-19T14:21:09Z [Information] Now listening on: https://localhost:7186
+2024-05-19T14:21:09Z [Information] Now listening on: http://localhost:5210
+2024-05-19T14:21:09Z [Information] Application started. Press Ctrl+C to shut down.
+2024-05-19T14:21:09Z [Information] Hosting environment: Development
+2024-05-19T14:21:09Z [Information] Content root path: C:\Users\Danni\source\repos\MemoryCards\back-end
+2024-05-19T14:22:03Z [Information] Retrieved 0 group names
+2024-05-19T14:22:42Z [Information] Created a new group with 1 cards
+2024-05-19T14:22:42Z [Information] Added card with details: StudyGroups.WebApi.Database.Models.Card
+2024-05-19T14:22:47Z [Information] Retrieved 1 group names
+2024-05-19T14:26:21Z [Information] Retrieved 1 group names
+2024-05-19T14:26:21Z [Information] Retrieved 1 group names
+2024-05-19T14:26:31Z [Information] Deleted group string
+2024-05-19T14:26:31Z [Information] Retrieved 0 group names
+2024-05-20T07:15:47Z [Information] Now listening on: http://localhost:5210
+2024-05-20T07:15:47Z [Information] Application started. Press Ctrl+C to shut down.
+2024-05-20T07:15:47Z [Information] Hosting environment: Development
+2024-05-20T07:15:47Z [Information] Content root path: C:\Users\Danni\source\repos\MemoryCards\back-end
+2024-05-20T07:16:35Z [Information] Application is shutting down...
+2024-05-20T07:17:10Z [Information] Now listening on: http://localhost:5210
+2024-05-20T07:17:10Z [Information] Application started. Press Ctrl+C to shut down.
+2024-05-20T07:17:10Z [Information] Hosting environment: Development
+2024-05-20T07:17:10Z [Information] Content root path: C:\Users\Danni\source\repos\MemoryCards\back-end
+2024-05-20T07:17:50Z [Warning] Failed to determine the https port for redirect.
+2024-05-20T07:17:51Z [Information] Created a new group with 1 cards
+2024-05-20T07:17:51Z [Information] Added card with details: StudyGroups.WebApi.Database.Models.Card
+2024-05-20T07:18:00Z [Information] Retrieved 1 group names
+2024-05-20T07:25:13Z [Information] Now listening on: http://localhost:5210
+2024-05-20T07:25:13Z [Information] Application started. Press Ctrl+C to shut down.
+2024-05-20T07:25:13Z [Information] Hosting environment: Development
+2024-05-20T07:25:13Z [Information] Content root path: C:\Users\Danni\source\repos\MemoryCards\back-end
+2024-05-20T07:25:47Z [Information] Now listening on: http://localhost:5210
+2024-05-20T07:25:47Z [Information] Application started. Press Ctrl+C to shut down.
+2024-05-20T07:25:47Z [Information] Hosting environment: Development
+2024-05-20T07:25:47Z [Information] Content root path: C:\Users\Danni\source\repos\MemoryCards\back-end
+2024-05-20T07:26:53Z [Warning] Failed to determine the https port for redirect.
+2024-05-20T07:26:54Z [Information] Created a new group with 1 cards
+2024-05-20T07:26:54Z [Information] Added card with details: StudyGroups.WebApi.Database.Models.Card
+2024-05-20T07:30:04Z [Information] Now listening on: https://localhost:7186
+2024-05-20T07:30:04Z [Information] Now listening on: http://localhost:5210
+2024-05-20T07:30:04Z [Information] Application started. Press Ctrl+C to shut down.
+2024-05-20T07:30:04Z [Information] Hosting environment: Development
+2024-05-20T07:30:04Z [Information] Content root path: C:\Users\Danni\source\repos\MemoryCards\back-end
+2024-05-20T07:30:25Z [Information] Created a new group with 1 cards
+2024-05-20T07:30:25Z [Information] Added card with details: StudyGroups.WebApi.Database.Models.Card
+2024-05-20T07:31:08Z [Information] Retrieved 2 group names
+2024-05-20T07:31:08Z [Information] Retrieved 2 group names
+2024-05-20T07:31:18Z [Information] Created a new group with 7 cards
+2024-05-20T07:31:18Z [Information] Added card with details: StudyGroups.WebApi.Database.Models.Card
+2024-05-20T07:31:18Z [Information] Added card with details: StudyGroups.WebApi.Database.Models.Card
+2024-05-20T07:31:18Z [Information] Added card with details: StudyGroups.WebApi.Database.Models.Card
+2024-05-20T07:31:18Z [Information] Added card with details: StudyGroups.WebApi.Database.Models.Card
+2024-05-20T07:31:18Z [Information] Added card with details: StudyGroups.WebApi.Database.Models.Card
+2024-05-20T07:31:18Z [Information] Added card with details: StudyGroups.WebApi.Database.Models.Card
+2024-05-20T07:31:18Z [Information] Added card with details: StudyGroups.WebApi.Database.Models.Card
+2024-05-20T07:31:18Z [Information] Retrieved 3 group names
+2024-05-20T07:32:25Z [Information] Deleted group string
+2024-05-20T07:32:25Z [Information] Retrieved 2 group names
+2024-05-20T08:02:53Z [Information] Retrieved 2 group names
+2024-05-20T08:02:53Z [Information] Retrieved 2 group names
+2024-05-20T08:03:19Z [Information] Retrieved 2 group names
+2024-05-20T08:03:19Z [Information] Retrieved 2 group names
+2024-05-20T08:05:08Z [Information] Retrieved 2 group names
+2024-05-20T08:07:51Z [Information] Retrieved 2 group names
+2024-05-20T08:08:30Z [Information] Retrieved 2 group names
+2024-05-20T08:15:51Z [Information] Retrieved 2 group names
+2024-05-20T08:15:51Z [Information] Retrieved 2 group names
+2024-05-20T08:16:28Z [Information] Deleted group dummyFile.xlsx
+2024-05-20T08:16:28Z [Information] Retrieved 2 group names
+2024-05-20T08:16:29Z [Information] Deleted group dummyFile.xlsx
+2024-05-20T08:16:29Z [Information] Retrieved 1 group names
+2024-05-20T08:16:30Z [Information] Deleted group example1card.xlsx
+2024-05-20T08:16:30Z [Information] Retrieved 1 group names
+2024-05-20T08:16:30Z [Information] Deleted group example1card.xlsx
+2024-05-20T08:16:30Z [Information] Retrieved 1 group names
+2024-05-20T08:16:31Z [Information] Deleted group example1card.xlsx
+2024-05-20T08:16:31Z [Information] Retrieved 1 group names
+2024-05-20T08:16:31Z [Information] Deleted group example1card.xlsx
+2024-05-20T08:16:31Z [Information] Retrieved 1 group names
+2024-05-20T08:16:31Z [Information] Deleted group example1card.xlsx
+2024-05-20T08:16:31Z [Information] Retrieved 1 group names
+2024-05-20T08:16:32Z [Information] Deleted group example1card.xlsx
+2024-05-20T08:16:32Z [Information] Retrieved 1 group names
+2024-05-20T08:16:32Z [Information] Deleted group example1card.xlsx
+2024-05-20T08:16:32Z [Information] Retrieved 0 group names
+2024-05-20T08:16:42Z [Information] Retrieved 0 group names
+2024-05-20T08:16:42Z [Information] Retrieved 0 group names
+2024-05-20T08:17:12Z [Information] Created a new group with 7 cards
+2024-05-20T08:17:12Z [Information] Added card with details: StudyGroups.WebApi.Database.Models.Card
+2024-05-20T08:17:12Z [Information] Added card with details: StudyGroups.WebApi.Database.Models.Card
+2024-05-20T08:17:12Z [Information] Added card with details: StudyGroups.WebApi.Database.Models.Card
+2024-05-20T08:17:12Z [Information] Added card with details: StudyGroups.WebApi.Database.Models.Card
+2024-05-20T08:17:12Z [Information] Added card with details: StudyGroups.WebApi.Database.Models.Card
+2024-05-20T08:17:12Z [Information] Added card with details: StudyGroups.WebApi.Database.Models.Card
+2024-05-20T08:17:12Z [Information] Added card with details: StudyGroups.WebApi.Database.Models.Card
+2024-05-20T08:17:12Z [Information] Retrieved 1 group names
+2024-05-20T08:18:55Z [Information] Retrieved 1 group names
+2024-05-20T08:22:31Z [Information] Retrieved 1 group names
+2024-05-20T08:22:38Z [Information] Retrieved 1 group names
+2024-05-20T08:22:38Z [Information] Retrieved 1 group names
+2024-05-20T08:23:00Z [Information] Retrieved 1 group names
+2024-05-20T08:23:02Z [Information] Retrieved 1 group names
+2024-05-20T08:23:02Z [Information] Retrieved 1 group names
+2024-05-20T08:23:13Z [Information] Retrieved 1 group names
+2024-05-20T08:24:32Z [Information] Retrieved 1 group names
+2024-05-20T08:24:34Z [Information] Retrieved 1 group names
+2024-05-20T08:24:34Z [Information] Retrieved 1 group names
+2024-05-20T08:25:40Z [Information] Retrieved 1 group names
+2024-05-20T08:25:50Z [Information] Retrieved 1 group names
+2024-05-20T08:31:39Z [Information] Retrieved 1 group names
+2024-05-20T08:31:39Z [Information] Retrieved 1 group names
+2024-05-20T08:49:04Z [Information] Retrieved 1 group names
+2024-05-20T08:49:43Z [Information] Retrieved 1 group names
+2024-05-20T08:49:43Z [Information] Retrieved 1 group names
+2024-05-20T08:50:06Z [Information] Retrieved 1 group names
+2024-05-20T08:50:06Z [Information] Retrieved 1 group names
+2024-05-20T08:53:39Z [Information] Deleted group example1card.xlsx
+2024-05-20T08:53:39Z [Information] Retrieved 1 group names
+2024-05-20T08:53:39Z [Information] Deleted group example1card.xlsx
+2024-05-20T08:53:39Z [Information] Retrieved 1 group names
+2024-05-20T08:53:41Z [Information] Deleted group example1card.xlsx
+2024-05-20T08:53:41Z [Information] Retrieved 1 group names
+2024-05-20T08:53:41Z [Information] Deleted group example1card.xlsx
+2024-05-20T08:53:41Z [Information] Retrieved 1 group names
+2024-05-20T08:53:41Z [Information] Deleted group example1card.xlsx
+2024-05-20T08:53:41Z [Information] Retrieved 1 group names
+2024-05-20T08:53:47Z [Information] Deleted group example1card.xlsx
+2024-05-20T08:53:47Z [Information] Retrieved 1 group names
+2024-05-20T08:53:47Z [Information] Deleted group example1card.xlsx
+2024-05-20T08:53:47Z [Information] Retrieved 0 group names
+2024-05-20T08:53:52Z [Information] Retrieved 0 group names
+2024-05-20T08:53:52Z [Information] Retrieved 0 group names
+2024-05-20T09:08:10Z [Information] Retrieved 0 group names
+2024-05-20T09:10:28Z [Information] Retrieved 0 group names
+2024-05-20T09:10:28Z [Information] Retrieved 0 group names
+2024-05-20T09:30:25Z [Information] Retrieved 0 group names
+2024-05-20T09:30:25Z [Information] Retrieved 0 group names
+2024-05-20T09:30:32Z [Information] Created a new group with 7 cards
+2024-05-20T09:30:32Z [Information] Added card with details: StudyGroups.WebApi.Database.Models.Card
+2024-05-20T09:30:32Z [Information] Added card with details: StudyGroups.WebApi.Database.Models.Card
+2024-05-20T09:30:32Z [Information] Added card with details: StudyGroups.WebApi.Database.Models.Card
+2024-05-20T09:30:32Z [Information] Added card with details: StudyGroups.WebApi.Database.Models.Card
+2024-05-20T09:30:32Z [Information] Added card with details: StudyGroups.WebApi.Database.Models.Card
+2024-05-20T09:30:32Z [Information] Added card with details: StudyGroups.WebApi.Database.Models.Card
+2024-05-20T09:30:32Z [Information] Added card with details: StudyGroups.WebApi.Database.Models.Card
+2024-05-20T09:30:32Z [Information] Retrieved 1 group names
+2024-05-20T10:10:56Z [Information] Retrieved 1 group names
+2024-05-20T10:23:08Z [Information] Application is shutting down...
+2024-05-20T10:23:14Z [Information] Now listening on: https://localhost:7186
+2024-05-20T10:23:14Z [Information] Now listening on: http://localhost:5210
+2024-05-20T10:23:14Z [Information] Application started. Press Ctrl+C to shut down.
+2024-05-20T10:23:14Z [Information] Hosting environment: Development
+2024-05-20T10:23:14Z [Information] Content root path: C:\Users\Danni\source\repos\MemoryCards\back-end
+2024-05-20T10:33:52Z [Information] Now listening on: https://localhost:7186
+2024-05-20T10:33:52Z [Information] Now listening on: http://localhost:5210
+2024-05-20T10:33:52Z [Information] Application started. Press Ctrl+C to shut down.
+2024-05-20T10:33:52Z [Information] Hosting environment: Development
+2024-05-20T10:33:52Z [Information] Content root path: C:\Users\Danni\source\repos\MemoryCards\back-end
+2024-05-20T10:34:43Z [Information] Retrieved 1 group names
+2024-05-20T10:34:43Z [Information] Retrieved 1 group names
+2024-05-20T10:34:46Z [Information] Retrieved 1 group names
+2024-05-20T10:34:46Z [Information] Retrieved 1 group names
+2024-05-20T10:35:01Z [Information] Deleted group example1card.xlsx
+2024-05-20T10:35:01Z [Information] Retrieved 1 group names
+2024-05-20T10:35:03Z [Information] Deleted group example1card.xlsx
+2024-05-20T10:35:03Z [Information] Retrieved 1 group names
+2024-05-20T10:35:07Z [Information] Deleted group example1card.xlsx
+2024-05-20T10:35:07Z [Information] Retrieved 1 group names
+2024-05-20T10:35:07Z [Information] Deleted group example1card.xlsx
+2024-05-20T10:35:07Z [Information] Retrieved 1 group names
+2024-05-20T10:35:07Z [Information] Deleted group example1card.xlsx
+2024-05-20T10:35:07Z [Information] Retrieved 1 group names
+2024-05-20T10:35:07Z [Information] Deleted group example1card.xlsx
+2024-05-20T10:35:07Z [Information] Retrieved 1 group names
+2024-05-20T10:35:08Z [Information] Deleted group example1card.xlsx
+2024-05-20T10:35:08Z [Information] Retrieved 0 group names
+2024-05-20T10:35:11Z [Information] Retrieved 0 group names
+2024-05-20T10:35:11Z [Information] Retrieved 0 group names
+2024-05-20T10:35:12Z [Information] Retrieved 0 group names
+2024-05-20T10:35:12Z [Information] Retrieved 0 group names
+2024-05-20T10:35:18Z [Information] Created a new group with 7 cards
+2024-05-20T10:35:18Z [Information] Added card with details: StudyGroups.WebApi.Database.Models.Card
+2024-05-20T10:35:18Z [Information] Added card with details: StudyGroups.WebApi.Database.Models.Card
+2024-05-20T10:35:18Z [Information] Added card with details: StudyGroups.WebApi.Database.Models.Card
+2024-05-20T10:35:18Z [Information] Added card with details: StudyGroups.WebApi.Database.Models.Card
+2024-05-20T10:35:18Z [Information] Added card with details: StudyGroups.WebApi.Database.Models.Card
+2024-05-20T10:35:18Z [Information] Added card with details: StudyGroups.WebApi.Database.Models.Card
+2024-05-20T10:35:18Z [Information] Added card with details: StudyGroups.WebApi.Database.Models.Card
+2024-05-20T10:35:18Z [Information] Retrieved 1 group names
+2024-05-20T10:56:44Z [Information] Retrieved 1 group names
+2024-05-20T10:56:44Z [Information] Retrieved 1 group names
+2024-05-20T11:03:14Z [Information] Retrieved 1 group names
+2024-05-20T11:03:14Z [Information] Retrieved 1 group names
+2024-05-20T11:05:48Z [Information] Retrieved 1 group names
