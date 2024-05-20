@@ -29,7 +29,7 @@ To install .NET, follow these steps:
 # Install .NET SDK (replace with the appropriate version if needed)
 # This example assumes installation of .NET 6 SDK
 sudo apt update
-sudo apt install dotnet-sdk-6.0
+sudo apt install dotnet-sdk-8.0
 ```
 
 ### MongoDB:
@@ -56,8 +56,8 @@ sudo service mongod start
 ```bash 
 # Navigate to your .NET project directory
 # Restore dependencies and run the application
-dotnet /path/to/your/dotnet/project/restore
-dotnet /path/to/your/dotnet/project/run
+dotnet restore /path/to/your/dotnet/project/.
+dotnet run /path/to/your/dotnet/project/.
 ```
 
 ### React Frontend
