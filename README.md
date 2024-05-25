@@ -28,6 +28,8 @@ To install .NET, follow these steps:
 ```bash
 # Install .NET SDK (replace with the appropriate version if needed)
 # This example assumes installation of .NET 8 SDK
+
+>>>>>>> origin/main
 sudo apt update
 sudo apt install dotnet-sdk-8.0
 ```
@@ -74,4 +76,5 @@ npm start
 ```
 
 Replace /path/to/your/dotnet/project and /path/to/your/react/project with the actual paths to your .NET and React project directories, respectively.
+
 
