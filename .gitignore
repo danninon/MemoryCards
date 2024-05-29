@@ -1,57 +1,57 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+.vs
 
 ## Frontend files
 # dependencies
-front-end/node_modules
-front-end//.pnp
-front-end/.pnp.js
+Frontend/node_modules
+Frontend//.pnp
+Frontend/.pnp.js
 
 # testing
-front-end//coverage
+Frontend//coverage
 
 # production
-front-end//build
+Frontend//build
 
 # misc
-front-end/.DS_Store
-front-end/.env.local
-front-end/.env.development.local
-front-end/.env.test.local
-front-end/.env.production.local
+Frontend/.DS_Store
+Frontend/.env.local
+Frontend/.env.development.local
+Frontend/.env.test.local
+Frontend/.env.production.local
 
-front-end/npm-debug.log*
-front-end/yarn-debug.log*
-front-end/yarn-error.log*
+Frontend/npm-debug.log*
+Frontend/yarn-debug.log*
+Frontend/yarn-error.log*
 
 ## Backend files
 # Ignore Visual Studio files
-back-end/*.suo
-back-end/*.user
-back-end/*.sln.docstates
-back-end/*.vs/
+Backend/.vs/
+Backend/*csproj.user
+Backend/logs/
 
 # Ignore build output
-back-end/bin/
-back-end/obj/
+Backend/bin/
+Backend/obj/
 
 # Ignore NuGet packages
-back-end/packages/
+Backend/packages/
 
 # Ignore ReSharper files
-back-end/_ReSharper*/
+Backend/_ReSharper*/
 
 # Ignore Rider files
-back-end/.idea/
+Backend/.idea/
 
 # Ignore Visual Studio Code files
-back-end/.vscode/
+Backend/.vscode/
 
 # Ignore deployment and publishing files
-back-end/*.publishproj
-back-end/*.deployproj
-back-end/*.nupkg
+Backend/*.publishproj
+Backend/*.deployproj
+Backend/*.nupkg
 
 # Ignore temp and log files
-back-end/*.tmp
-back-end/*.log
-back-end/*.vspscc
+Backend/*.tmp
+Backend/*.log
+Backend/*.vspscc

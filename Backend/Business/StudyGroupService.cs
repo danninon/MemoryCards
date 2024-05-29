@@ -1,9 +1,9 @@
 ﻿using Microsoft.Extensions.Options;
 using MongoDB.Driver;
-using MemoryCards.Database;
-using MemoryCards.Database.Models;
+using Backend.Database;
+using Backend.Database.Models;
 
-namespace MemoryCards.Business
+namespace Backend.Business
 {
     public class StudyGroupService : IStudyGroupService
     {

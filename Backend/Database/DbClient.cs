@@ -1,8 +1,8 @@
 ﻿using Microsoft.Extensions.Options;
 using MongoDB.Driver;
-using MemoryCards.Database.Models;
+using Backend.Database.Models;
 
-namespace MemoryCards.Database
+namespace Backend.Database
 {
     public class DbClient : IDbClient
     {

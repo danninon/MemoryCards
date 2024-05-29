@@ -1,6 +1,6 @@
-﻿using MemoryCards.Database.Models;
+﻿using Backend.Database.Models;
 
-namespace MemoryCards.Business
+namespace Backend.Business
 {
     public interface IStudyGroupService
     {

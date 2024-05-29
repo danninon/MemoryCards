@@ -1,5 +1,5 @@
-using MemoryCards.Business;
-using MemoryCards.Database;
+using Backend.Business;
+using Backend.Database;
 
 
 var builder = WebApplication.CreateBuilder(args);

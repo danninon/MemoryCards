@@ -1,4 +1,4 @@
-﻿namespace MemoryCards.Database
+﻿namespace Backend.Database
 {
     public class DbConfig
     {

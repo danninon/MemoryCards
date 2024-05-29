@@ -1,9 +1,9 @@
 using Microsoft.AspNetCore.Mvc;
-using MemoryCards.Business;
-using MemoryCards.Database.Models;
+using Backend.Business;
+using Backend.Database.Models;
 
 
-namespace MemoryCards.Controllers
+namespace Backend.Controllers
 {
     [ApiController]
     [Route("[controller]")]

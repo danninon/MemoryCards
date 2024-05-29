@@ -1,7 +1,7 @@
 ﻿using MongoDB.Bson;
 using MongoDB.Bson.Serialization.Attributes;
 
-namespace MemoryCards.Database.Models
+namespace Backend.Database.Models
 {
     public class Card
     {

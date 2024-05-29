@@ -1,7 +1,7 @@
 ﻿using MongoDB.Driver;
-using MemoryCards.Database.Models;
+using Backend.Database.Models;
 
-namespace MemoryCards.Database
+namespace Backend.Database
 {
     public interface IDbClient
     {
