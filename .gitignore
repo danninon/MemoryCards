@@ -1,8 +1,14 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
-.vs
+
+## Global files
+
+# Ignore Visual Studio files
+*.vs
 *csproj.user
 
 ## Frontend files
+
+
 # dependencies
 Frontend/node_modules
 Frontend//.pnp
@@ -14,20 +20,8 @@ Frontend//coverage
 # production
 Frontend//build
 
-# misc
-Frontend/.DS_Store
-Frontend/.env.local
-Frontend/.env.development.local
-Frontend/.env.test.local
-Frontend/.env.production.local
-
-Frontend/npm-debug.log*
-Frontend/yarn-debug.log*
-Frontend/yarn-error.log*
-
 ## Backend files
-# Ignore Visual Studio files
-Backend/.vs/
+
 
 Backend/logs/
 
@@ -40,12 +34,6 @@ Backend/packages/
 
 # Ignore ReSharper files
 Backend/_ReSharper*/
-
-# Ignore Rider files
-Backend/.idea/
-
-# Ignore Visual Studio Code files
-Backend/.vscode/
 
 # Ignore deployment and publishing files
 Backend/*.publishproj
