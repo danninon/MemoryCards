@@ -1,4 +1,4 @@
-﻿namespace StudyGroups.WebApi.Database
+﻿namespace MemoryCards.Database
 {
     public class DbConfig
     {

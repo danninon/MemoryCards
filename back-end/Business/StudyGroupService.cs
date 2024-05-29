@@ -1,9 +1,9 @@
 ﻿using Microsoft.Extensions.Options;
 using MongoDB.Driver;
-using StudyGroups.WebApi.Database;
-using StudyGroups.WebApi.Database.Models;
+using MemoryCards.Database;
+using MemoryCards.Database.Models;
 
-namespace StudyGroups.WebApi.Business
+namespace MemoryCards.Business
 {
     public class StudyGroupService : IStudyGroupService
     {

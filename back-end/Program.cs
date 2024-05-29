@@ -1,5 +1,5 @@
-using StudyGroups.WebApi.Business;
-using StudyGroups.WebApi.Database;
+using MemoryCards.Business;
+using MemoryCards.Database;
 
 
 var builder = WebApplication.CreateBuilder(args);

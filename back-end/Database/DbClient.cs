@@ -1,8 +1,8 @@
 ﻿using Microsoft.Extensions.Options;
 using MongoDB.Driver;
-using StudyGroups.WebApi.Database.Models;
+using MemoryCards.Database.Models;
 
-namespace StudyGroups.WebApi.Database
+namespace MemoryCards.Database
 {
     public class DbClient : IDbClient
     {

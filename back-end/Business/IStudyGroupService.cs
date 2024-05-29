@@ -1,6 +1,6 @@
-﻿using StudyGroups.WebApi.Database.Models;
+﻿using MemoryCards.Database.Models;
 
-namespace StudyGroups.WebApi.Business
+namespace MemoryCards.Business
 {
     public interface IStudyGroupService
     {

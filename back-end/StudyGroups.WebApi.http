@@ -1,6 +1,0 @@
-@StudyGroups.WebApi_HostAddress = http://localhost:5210
-
-GET {{StudyGroups.WebApi_HostAddress}}/weatherforecast/
-Accept: application/json
-
-###

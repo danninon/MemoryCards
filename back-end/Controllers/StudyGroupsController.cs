@@ -1,9 +1,9 @@
 using Microsoft.AspNetCore.Mvc;
-using StudyGroups.WebApi.Business;
-using StudyGroups.WebApi.Database.Models;
+using MemoryCards.Business;
+using MemoryCards.Database.Models;
 
 
-namespace StudyGroups.WebApi.Controllers
+namespace MemoryCards.Controllers
 {
     [ApiController]
     [Route("[controller]")]
