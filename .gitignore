@@ -1,5 +1,6 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 .vs
+*csproj.user
 
 ## Frontend files
 # dependencies
@@ -27,7 +28,7 @@ Frontend/yarn-error.log*
 ## Backend files
 # Ignore Visual Studio files
 Backend/.vs/
-Backend/*csproj.user
+
 Backend/logs/
 
 # Ignore build output
