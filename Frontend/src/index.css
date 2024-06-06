@@ -27,28 +27,27 @@ h2 {
     cursor: pointer;
     transition: transform 0.9s;
     transform-style: preserve-3d;
+    text-align: center;
 }
 
 .card-front {
     background-color: yellowgreen !important;
-    transition: transform 0.9s;
-    transform-style: preserve-3d;
+  
 }
 
 .card-back {
-    background-color: aquamarine;
-    transition: transform 0.9s;
-    transform-style: preserve-3d;
+    background-color: aquamarine !important;
+    transform: rotateY(180deg);
 }
-
 
 .flip {
-  transform: rotateY(180deg);
+    transform: rotateY(180deg);
+ 
 }
 
-.content{
-  text-align: center;
-  top: 47%;
-  position: relative;
-  backface-visibility: hidden;
+.content {
+    text-align: center;
+    top: 47%;
+    position: relative;
+    backface-visibility: hidden;
 }

@@ -31,10 +31,9 @@ namespace Backend.Business
 
         public void updateCard(Card card, bool didSucceed)
         {
-
-            // get card
-            // 
-            throw new NotImplementedException();
+           card.CorrectAttempts = didSucceed ? card.CorrectAttempts+1:card.CorrectAttempts;
+           card.Attempts = card.Attempts + 1;
+            _cardsCollection.ReplaceOne(c => c.Id == card.Id, card);
         }
     }
 }

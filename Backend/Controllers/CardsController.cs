@@ -89,20 +89,25 @@ namespace Backend.Controllers
                 return StatusCode(500, "Failed to delete group");
             }
         }
+        public class CardUpdateModel
+        {
+            public Card Card { get; set; }
+            public bool DidSucceed { get; set; }
+        }
 
-        [HttpPut]
-        public IActionResult UpdateCard(Card card, bool didSucceed)
+        [HttpPut("update/card")]
+        public IActionResult UpdateCard([FromBody] CardUpdateModel updateModel)
         {
             try
             {
-                _dbService.updateCard(card, didSucceed);
-                _logger.LogInformation("Updated card {CardId}", card.Id);
-                return StatusCode(204);
+                _dbService.updateCard(updateModel.Card, updateModel.DidSucceed);
+                _logger.LogInformation("Updated card {CardId}", updateModel.Card.Id);
+                return StatusCode(204);  // No Content
             }
             catch (Exception ex)
             {
-                _logger.LogError(ex, "Failed to update card {CardId}", card.Id);
-                return StatusCode(500, "Failed to update card");
+                _logger.LogError(ex, "Failed to update card {CardId}", updateModel.Card.Id);
+                return StatusCode(500, "Failed to update card");  // Internal Server Error
             }
         }
     }

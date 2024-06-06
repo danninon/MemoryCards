@@ -24,6 +24,30 @@ const createGroup = async(cards) => {
   }
 }
 
+const getGroup = async (groupName) => {
+    try {
+        // console.log("cards: " + cards);
+        const { data } = await axios.get(`${BASE_URL}/${groupName}`);
+        setGroup(data);
+    } catch (e) {
+        console.log('Error: ', e);
+    }
+}
+
+const updateCard = async (card, didSucceed) => {
+    try {
+        const response = await axios.put(`${BASE_URL}/update/card`, { card, didSucceed });
+        console.log('Card updated successfully:', response.data);
+        // Handle successful update here (e.g., display a message or redirect)
+    } catch (error) {
+        console.error('Error updating card:', error);
+        // Handle errors here (e.g., display an error message)
+    }
+}
+
+// @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+
 const getGroupNames = async() => {
   try{
     // console.log("cards: " + cards);
@@ -34,15 +58,6 @@ const getGroupNames = async() => {
   }
 }
 
-const getGroup = async(groupName) => {
-  try{
-    // console.log("cards: " + cards);
-    const {data} = await axios.get(`${BASE_URL}/${groupName}`);
-    setGroup(data);
-  }catch(e){
-    console.log('Error: ', e);
-  }
-    }
 
 const deleteGroup = async(groupName) => {
   try{
@@ -54,16 +69,7 @@ const deleteGroup = async(groupName) => {
   }
     }
 
-const updateCard = async(card, didSucceed) => {
-    try {
-        const response = await axios.put('/api/cards/update', { card, didSucceed });
-        console.log('Card updated successfully');
-        // Handle successful update here (e.g., display a message or redirect)
-    } catch (error) {
-        console.error('Error updating card:', error);
-        // Handle errors here (e.g., display an error message)
-    }
-}
+
   
 
 
