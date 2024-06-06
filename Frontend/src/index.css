@@ -21,22 +21,26 @@ h2 {
   font-size: xx-large
 }
 
-.card{
-  margin: 1rem;
-  height: 500px !important;
-  cursor: pointer;
-  transition: transfrom 0.9s;
-  transform-style: preserve-3d;
-
+.card {
+    margin: 1rem;
+    height: 500px !important;
+    cursor: pointer;
+    transition: transform 0.9s;
+    transform-style: preserve-3d;
 }
 
 .card-front {
-  background-color: yellowgreen !important;
+    background-color: yellowgreen !important;
+    transition: transform 0.9s;
+    transform-style: preserve-3d;
 }
 
 .card-back {
-  background-color:aquamarine !important;
+    background-color: aquamarine;
+    transition: transform 0.9s;
+    transform-style: preserve-3d;
 }
+
 
 .flip {
   transform: rotateY(180deg);

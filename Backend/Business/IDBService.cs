@@ -2,13 +2,14 @@
 
 namespace Backend.Business
 {
-    public interface IStudyGroupService
+    public interface IDBService
     {
         void Add(List<Card> cards);
         void DeleteGroup(string groupName);
         IEnumerable<Card> GetGroup(string groupName);
         IEnumerable<string> GetGroupNames();
 
-        // List<Card> GetAll();
+        void updateCard(Card card, bool didSucceed);
+
     }
 }

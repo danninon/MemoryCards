@@ -7,15 +7,15 @@ namespace Backend.Controllers
 {
     [ApiController]
     [Route("[controller]")]
-    public class StudyGroupsController : ControllerBase
+    public class CardsController : ControllerBase
     {
-        private readonly ILogger<StudyGroupsController> _logger;
-        private readonly IStudyGroupService _studyGroupService;
+        private readonly ILogger<CardsController> _logger;
+        private readonly IDBService _dbService;
 
-        public StudyGroupsController(IStudyGroupService studyGroupService, ILogger<StudyGroupsController> logger)
+        public CardsController(IDBService dbService, ILogger<CardsController> logger)
         {
             _logger = logger;
-            _studyGroupService = studyGroupService;
+            _dbService = dbService;
         }
 
         [HttpPost]
@@ -23,7 +23,7 @@ namespace Backend.Controllers
         {
             try
             {
-                _studyGroupService.Add(cards);
+                _dbService.Add(cards);
                 _logger.LogInformation("Created a new group with {NumberOfCards} cards", cards.Count);
                 foreach (var card in cards)
                 {
@@ -43,7 +43,7 @@ namespace Backend.Controllers
         {
             try
             {
-                var group = _studyGroupService.GetGroup(groupName);
+                var group = _dbService.GetGroup(groupName);
                 if (group == null)
                 {
                     _logger.LogWarning("Group {GroupName} not found", groupName);
@@ -63,7 +63,7 @@ namespace Backend.Controllers
         {
             try
             {
-                List<string> groupNames = _studyGroupService.GetGroupNames().ToList();
+                List<string> groupNames = _dbService.GetGroupNames().ToList();
                 _logger.LogInformation($"Retrieved {groupNames.Count} group names");
                 return Ok(groupNames);
             }
@@ -79,7 +79,7 @@ namespace Backend.Controllers
         {
             try
             {
-                _studyGroupService.DeleteGroup(groupName);
+                _dbService.DeleteGroup(groupName);
                 _logger.LogInformation("Deleted group {GroupName}", groupName);
                 return StatusCode(204);
             }
@@ -87,6 +87,22 @@ namespace Backend.Controllers
             {
                 _logger.LogError(ex, "Failed to delete group {GroupName}", groupName);
                 return StatusCode(500, "Failed to delete group");
+            }
+        }
+
+        [HttpPut]
+        public IActionResult UpdateCard(Card card, bool didSucceed)
+        {
+            try
+            {
+                _dbService.updateCard(card, didSucceed);
+                _logger.LogInformation("Updated card {CardId}", card.Id);
+                return StatusCode(204);
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, "Failed to update card {CardId}", card.Id);
+                return StatusCode(500, "Failed to update card");
             }
         }
     }

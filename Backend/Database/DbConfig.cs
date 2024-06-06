@@ -2,8 +2,8 @@
 {
     public class DbConfig
     {
-        public string DatabaseName { get; set; }
-        public string ConnectionString { get; set; }
+        public required string DatabaseName { get; set; }
+        public required string ConnectionString { get; set; }
 
     }
 }

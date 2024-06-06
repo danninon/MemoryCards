@@ -1,1 +1,2 @@
 C:\Users\Danni\source\repos\test\MemoryCards\front-end\obj\Debug\Frontend.esproj.CoreCompileInputs.cache
+C:\Users\Danni\source\repos\MemoryCards\Frontend\obj\Debug\Frontend.esproj.CoreCompileInputs.cache

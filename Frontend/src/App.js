@@ -8,7 +8,7 @@ import axios from 'axios';
 import {useState, useEffect} from 'react';
 
 const App = () => { 
-const BASE_URL = 'https://localhost:7186/StudyGroups' //change to make dynamic //StudyGroups is derived from controller name minus the word controller
+const BASE_URL = 'https://localhost:7186/cards' //change to make dynamic //StudyGroups is derived from controller name minus the word controller
 const [groupNames, setGroupNames] = useState([]); //variable that is set in the, function
 const [group, setGroup] = useState([]);
  
@@ -42,7 +42,7 @@ const getGroup = async(groupName) => {
   }catch(e){
     console.log('Error: ', e);
   }
-}
+    }
 
 const deleteGroup = async(groupName) => {
   try{
@@ -52,7 +52,19 @@ const deleteGroup = async(groupName) => {
   }catch(e){
     console.log('Error: ', e);
   }
+    }
+
+const updateCard = async(card, didSucceed) => {
+    try {
+        const response = await axios.put('/api/cards/update', { card, didSucceed });
+        console.log('Card updated successfully');
+        // Handle successful update here (e.g., display a message or redirect)
+    } catch (error) {
+        console.error('Error updating card:', error);
+        // Handle errors here (e.g., display an error message)
+    }
 }
+  
 
 
 return <div className = 'App'>
@@ -77,7 +89,10 @@ return <div className = 'App'>
         </Accordion.Body>
       </Accordion.Item>
     </Accordion>
-    <StudyCarousel group={group} />
+    <StudyCarousel
+        group={group}
+        updateCard={updateCard}
+    />
 </div>
 
 }

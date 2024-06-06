@@ -5,11 +5,11 @@ using Backend.Database.Models;
 
 namespace Backend.Business
 {
-    public class StudyGroupService : IStudyGroupService
+    public class DbService : IDBService
     {
         private IMongoCollection<Card> _cardsCollection;
 
-        public StudyGroupService(IDbClient dbClient) {
+        public DbService(IDbClient dbClient) {
             _cardsCollection = dbClient.GetCardsCollection();
         }
 
@@ -28,13 +28,13 @@ namespace Backend.Business
 
         public IEnumerable<string> GetGroupNames() =>
             _cardsCollection.Distinct(cards => cards.GroupName, cards => true).ToEnumerable();
-   
 
+        public void updateCard(Card card, bool didSucceed)
+        {
 
-
-
-        // List<Card> GetAll(){
-        //     return _cardsCollection.Find(_ => true).ToList();
-        // }
+            // get card
+            // 
+            throw new NotImplementedException();
+        }
     }
 }
