@@ -9,7 +9,9 @@ namespace Backend.Business
         IEnumerable<Card> GetGroup(string groupName);
         IEnumerable<string> GetGroupNames();
 
-        void updateCard(Card card, bool didSucceed);
+        public Card getCardById(string cardId);
+        void updateCard(string cardId, bool didSucceed);
 
+        
     }
 }

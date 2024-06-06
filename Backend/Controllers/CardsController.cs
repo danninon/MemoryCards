@@ -89,6 +89,8 @@ namespace Backend.Controllers
                 return StatusCode(500, "Failed to delete group");
             }
         }
+
+
         public class CardUpdateModel
         {
             public Card Card { get; set; }
@@ -100,7 +102,26 @@ namespace Backend.Controllers
         {
             try
             {
-                _dbService.updateCard(updateModel.Card, updateModel.DidSucceed);
+                var card = _dbService.getCardById(updateModel.Card.Id);
+                if (card == null)
+                {
+                    _logger.LogWarning("Card {CardId} not found", updateModel.Card.Id);
+                    return NotFound();
+                }
+                _logger.LogInformation("Current attempts: {Attempts}", updateModel.Card.Attempts);
+                _logger.LogInformation("Current correct attempts: {CorrectAttempts}", updateModel.Card.CorrectAttempts);
+
+                _dbService.updateCard(updateModel.Card.Id, updateModel.DidSucceed);
+
+                card = _dbService.getCardById(updateModel.Card.Id);
+                _logger.LogInformation("Current attempts: {Attempts}", updateModel.Card.Attempts);
+                _logger.LogInformation("Current correct attempts: {CorrectAttempts}", updateModel.Card.CorrectAttempts);
+
+                if (card == null)
+                {
+                    _logger.LogWarning("Card {CardId} not found", updateModel.Card.Id);
+                    return NotFound();
+                }
                 _logger.LogInformation("Updated card {CardId}", updateModel.Card.Id);
                 return StatusCode(204);  // No Content
             }

@@ -31,7 +31,7 @@ builder.Services.Configure<DbConfig>(configuration.GetSection("studyGroupDataBas
 
 // Register other services
 builder.Services.AddSingleton<IDbClient, DbClient>();
-builder.Services.AddTransient<IDBService, DbService>();
+builder.Services.AddTransient<ICardRepository, CardRepository>();
 builder.Services.AddCors(options =>
 {
     options.AddPolicy("AllowAnyOrigin",

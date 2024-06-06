@@ -17,9 +17,9 @@ namespace Backend.Database.Models
 
         public string? Id { get; set; }
         [BsonElement("Name")]
-        public string? GroupName { get; set; } // "Math for kids"
-        public string? Question { get; set; } // "2 + 2 = ?"
-        public string? Answer { get; set; } // "4"
+        public string GroupName { get; set; } // "Math for kids"
+        public string Question { get; set; } // "2 + 2 = ?"
+        public string Answer { get; set; } // "4"
         public int Attempts { get; set; }
         public int CorrectAttempts { get; set; } 
     }

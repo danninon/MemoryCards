@@ -5,11 +5,11 @@ using Backend.Database.Models;
 
 namespace Backend.Business
 {
-    public class DbService : IDBService
+    public class CardRepository : ICardRepository
     {
         private IMongoCollection<Card> _cardsCollection;
 
-        public DbService(IDbClient dbClient) {
+        public CardRepository(IDbClient dbClient) {
             _cardsCollection = dbClient.GetCardsCollection();
         }
 
@@ -29,10 +29,16 @@ namespace Backend.Business
         public IEnumerable<string> GetGroupNames() =>
             _cardsCollection.Distinct(cards => cards.GroupName, cards => true).ToEnumerable();
 
-        public void updateCard(Card card, bool didSucceed)
+        public Card getCardById(string cardId)
         {
-           card.CorrectAttempts = didSucceed ? card.CorrectAttempts+1:card.CorrectAttempts;
-           card.Attempts = card.Attempts + 1;
+            return _cardsCollection.Find(card => card.Id == cardId).FirstOrDefault();
+        }
+
+        public void updateCard(string cardId, bool didSucceed)
+        {
+            Card card =  _cardsCollection.Find(card => card.Id == cardId).FirstOrDefault();
+            card.CorrectAttempts = didSucceed ? card.CorrectAttempts+1:card.CorrectAttempts;
+            card.Attempts = card.Attempts + 1;
             _cardsCollection.ReplaceOne(c => c.Id == card.Id, card);
         }
     }
