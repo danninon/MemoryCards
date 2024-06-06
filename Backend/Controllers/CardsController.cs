@@ -10,9 +10,9 @@ namespace Backend.Controllers
     public class CardsController : ControllerBase
     {
         private readonly ILogger<CardsController> _logger;
-        private readonly IDBService _dbService;
+        private readonly ICardRepository _dbService;
 
-        public CardsController(IDBService dbService, ILogger<CardsController> logger)
+        public CardsController(ICardRepository dbService, ILogger<CardsController> logger)
         {
             _logger = logger;
             _dbService = dbService;

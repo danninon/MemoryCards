@@ -1,0 +1,38 @@
+services:
+ # backend:
+  #  image: mcr.microsoft.com/dotnet/samples:aspnetapp
+   # volumes:
+    #    - ./Backend:/app
+    #    - ${HOME}/.aspnet/https:/https/
+    #    - ~/.aspnet/https:/https:ro
+     #   - ${USERPROFILE}\.aspnet\https:C:\https:ro
+   # working_dir: /app
+  #  command: bash -c "dotnet watch run"
+    #ports:
+    #  - "7186:7186"
+    #environment:
+     # - ASPNETCORE_URLS=https://+:7186
+      #- ASPNETCORE_ENVIRONMENT=Development
+      #- ASPNETCORE_Kestrel__Certificates__Default__Password=1234
+      #- ASPNETCORE_Kestrel__Certificates__Default__Path=/https/aspnetapp.pfx
+  frontend:
+    image: node:16
+    volumes:
+      - ./FrontEnd:/app
+    working_dir: /app
+    command: bash -c "npm install && npm start"
+    ports:
+      - "3000:3000"
+    environment:
+      - CHOKIDAR_USEPOLLING=true
+
+  mongo:
+    image: mongo
+    volumes:
+      - mongo-data:/data/db
+    ports:
+      - "27017:27017"
+
+volumes:
+  mongo-data:
+    driver: local

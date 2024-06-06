@@ -2,7 +2,7 @@
 
 namespace Backend.Business
 {
-    public interface IDBService
+    public interface ICardRepository
     {
         void Add(List<Card> cards);
         void DeleteGroup(string groupName);
