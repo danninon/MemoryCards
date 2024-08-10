@@ -19,14 +19,20 @@ namespace Backend.Database
         {
             return _database.GetCollection<Card>("Cards"); //Cards is the collection's designated name, like a table in SQL
         }
-        public Card GetCardById(string cardId)
+
+        public IMongoCollection<Group> GetGroupsCollection()
         {
-            var cardsCollection = GetCardsCollection();
-            // Create a filter to search the card by ID
-            var filter = Builders<Card>.Filter.Eq(card => card.Id, cardId);
-            // Find the card with the specified ID
-            var card = cardsCollection.Find(filter).FirstOrDefault();
-            return card;
+            return _database.GetCollection<Group>("Groups"); //Cards is the collection's designated name, like a table in SQL
         }
+
+        //public Card GetCardById(string cardId)
+        //{
+        //    var cardsCollection = GetCardsCollection();
+        //    // Create a filter to search the card by ID
+        //    var filter = Builders<Card>.Filter.Eq(card => card.Id, cardId);
+        //    // Find the card with the specified ID
+        //    var card = cardsCollection.Find(filter).FirstOrDefault();
+        //    return card;
+        //}
     }
 }
