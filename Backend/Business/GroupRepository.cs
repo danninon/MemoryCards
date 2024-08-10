@@ -28,6 +28,12 @@ namespace Backend.Business
             await _groupsCollection.InsertOneAsync(group);
         }
         // Other methods as needed...
+
+        public async Task<IEnumerable<Group>> GetAllGroupsAsync()
+        {
+            return await _groupsCollection.Find(group => true).ToListAsync();
+        }
+
     }
 
 }
