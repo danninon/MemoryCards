@@ -10,87 +10,48 @@ namespace Backend.Controllers
     public class CardsController : ControllerBase
     {
         private readonly ILogger<CardsController> _logger;
-        private readonly ICardRepository _dbService;
+        private readonly ICardRepository _cardRepository;
 
         public CardsController(ICardRepository dbService, ILogger<CardsController> logger)
         {
             _logger = logger;
-            _dbService = dbService;
+            _cardRepository = dbService;
         }
 
-        //[HttpPost]
-        //public IActionResult CreateGroup(List<Card> cards)
-        //{
-        //    try
-        //    {
-        //        _dbService.Add(cards);
-        //        _logger.LogInformation("Created a new group with {NumberOfCards} cards", cards.Count);
-        //        foreach (var card in cards)
-        //        {
-        //            _logger.LogInformation("Added card with details: {CardDetails}", card.ToString());
-        //        }
-        //        return StatusCode(201);
-        //    }
-        //    catch (Exception ex)
-        //    {
-        //        _logger.LogError(ex, "Failed to create group");
-        //        return StatusCode(500, "Failed to create group");
-        //    }
-        //}
+        [HttpPut("{cardId}/update-attempts")]
+        public async Task<IActionResult> UpdateCardAttempts(string cardId, [FromBody] bool succeeded)
+        {
+            _logger.LogInformation($"Received request to update attempts for card {cardId}. Success: {succeeded}");
 
-        //[HttpGet("{groupName}")]
-        //public IActionResult GetGroup(string groupName)
-        //{
-        //    try
-        //    {
-        //        var group = _dbService.GetGroup(groupName);
-        //        if (group == null)
-        //        {
-        //            _logger.LogWarning("Group {GroupName} not found", groupName);
-        //            return NotFound();
-        //        }
-        //        return Ok(group);
-        //    }
-        //    catch (Exception ex)
-        //    {
-        //        _logger.LogError(ex, "Failed to retrieve group {GroupName}", groupName);
-        //        return StatusCode(500, "Failed to retrieve group");
-        //    }
-        //}
+            try
+            {
+                // Fetch the card by ID
+                var card = await _cardRepository.GetCardByIdAsync(cardId);
+                if (card == null)
+                {
+                    _logger.LogWarning($"Card with ID {cardId} not found.");
+                    return NotFound("Card not found.");
+                }
 
-        //[HttpGet("group-names")]
-        //public IActionResult GetGroupNames()
-        //{
-        //    try
-        //    {
-        //        List<string> groupNames = _dbService.GetGroupNames().ToList();
-        //        _logger.LogInformation($"Retrieved {groupNames.Count} group names");
-        //        return Ok(groupNames);
-        //    }
-        //    catch (Exception ex)
-        //    {
-        //        _logger.LogError(ex, "Failed to retrieve group names");
-        //        return StatusCode(500, "Failed to retrieve group names");
-        //    }
-        //}
+                // Update the attempts
+                card.TotalAttempts += 1;
+                if (succeeded)
+                {
+                    card.CorrectAttempts += 1;
+                }
 
-        //[HttpDelete("{groupName}")]
-        //public IActionResult DeleteGroup(string groupName)
-        //{
-        //    try
-        //    {
-        //        _dbService.DeleteGroup(groupName);
-        //        _logger.LogInformation("Deleted group {GroupName}", groupName);
-        //        return StatusCode(204);
-        //    }
-        //    catch (Exception ex)
-        //    {
-        //        _logger.LogError(ex, "Failed to delete group {GroupName}", groupName);
-        //        return StatusCode(500, "Failed to delete group");
-        //    }
-        //}
+                // Save the updated card back to the repository
+                await _cardRepository.UpdateCardAsync(card);
+                _logger.LogInformation($"Card {cardId} updated successfully. TotalAttempts: {card.TotalAttempts}, CorrectAttempts: {card.CorrectAttempts}");
 
-
+                return Ok(new { Message = "Card attempts updated successfully", Card = card });
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, $"An error occurred while updating card {cardId}.");
+                return StatusCode(500, "An error occurred while updating the card.");
+            }
+        }
         //public class CardUpdateModel
         //{
         //    public Card Card { get; set; }

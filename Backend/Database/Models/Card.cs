@@ -8,10 +8,15 @@ namespace Backend.Database.Models
     public class Card
     {
       
+        public Card()
+        {
+            CorrectAttempts = 0;
+            TotalAttempts = 0;
+        }
 
         [BsonId]
         [BsonRepresentation(BsonType.ObjectId)]
-        public string Id { get; set; }
+        public required string Id { get; set; }
 
         // This field references the group to which the card belongs
         [BsonRepresentation(BsonType.ObjectId)]
@@ -19,8 +24,14 @@ namespace Backend.Database.Models
         [JsonIgnore] // Prevents the field from being required in the request body
         public string? GroupID { get; set; } // Reference to the Group
 
-        public string Question { get; set; } // "2 + 2 = ?"
-        public string Answer { get; set; } // "4"
+
+        public required string Question { get; set; } // "2 + 2 = ?" one day this should be objects other than strings
+        public required string Answer { get; set; } // "4"
+
+        public int CorrectAttempts { get; set; }
+        public int TotalAttempts { get; set; }
+
+        //public DateTime lastTimeRetrieved { get; set; }
       
     }
 }

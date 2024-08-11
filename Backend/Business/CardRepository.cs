@@ -51,6 +51,12 @@ namespace Backend.Business
             return card;
         }
 
+        public async Task UpdateCardAsync(Card card)
+        {
+            await _cardsCollection.ReplaceOneAsync(c => c.Id == card.Id, card);
+        }
+
+
         //public void updateCard(string cardId, bool didSucceed)
         //{
         //    Card card =  _cardsCollection.Find(card => card.Id == cardId).FirstOrDefault();
