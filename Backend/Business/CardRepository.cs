@@ -43,38 +43,13 @@ namespace Backend.Business
             await _cardsCollection.InsertOneAsync(card);
         }
 
-        //public async void Add(Card card)
-        //{
-        //    await _cardsCollection.InsertOneAsync(card);
-        //}
+        public async Task<Card> GetCardByIdAsync(string cardId)
+        {
+            // Retrieve the card from the collection using the provided string cardId
+            var card = await _cardsCollection.Find(c => c.Id == cardId).FirstOrDefaultAsync();
 
-        //public void Update(Card card)
-        //{
-        //    throw new NotImplementedException();
-        //}
-
-
-
-        //public void Add(List<Card> cards)
-        //{
-        //    _cardsCollection.InsertMany(cards);
-        //}
-
-        //public void DeleteGroup(string groupName)
-        //{
-        //    _cardsCollection.DeleteOne(cards => cards.GroupName.Equals(groupName));
-        //}
-
-        //public IEnumerable<Card> GetGroup(string groupName) =>
-        //    _cardsCollection.Find(cards => cards.GroupName.Equals(groupName)).ToEnumerable();
-
-        //public IEnumerable<string> GetGroupNames() =>
-        //    _cardsCollection.Distinct(cards => cards.GroupName, cards => true).ToEnumerable();
-
-        //public Card getCardById(string cardId)
-        //{
-        //    return _cardsCollection.Find(card => card.Id == cardId).FirstOrDefault();
-        //}
+            return card;
+        }
 
         //public void updateCard(string cardId, bool didSucceed)
         //{

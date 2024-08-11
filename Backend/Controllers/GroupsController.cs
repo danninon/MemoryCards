@@ -92,7 +92,6 @@ namespace Backend.Controllers
 
             try
             {
-                // Retrieve all groups from the repository
                 var groups = await _groupRepository.GetAllGroupsAsync();
 
                 if (groups == null || !groups.Any())
@@ -101,17 +100,30 @@ namespace Backend.Controllers
                     return NotFound("No groups found.");
                 }
 
-                // Iterate through each group to fetch associated cards
+                var result = new List<object>();
+
                 foreach (var group in groups)
                 {
-                    _logger.LogDebug($"Fetching cards for group Id={group.Id}, Name={group.Name}.");
+                    var cards = new List<Card>();
+                    foreach (var cardId in group.CardIds)
+                    {
+                        var card = await _cardRepository.GetCardByIdAsync(cardId);
+                        if (card != null)
+                        {
+                            cards.Add(card);
+                        }
+                    }
 
-                    var cards = await _cardRepository.GetCardsByGroupIdAsync(group.Id);
-                    //group.CardIds = cards.ToList();  // Assuming your Group model has a Cards property
+                    result.Add(new
+                    {
+                        group.Id,
+                        group.Name,
+                        Cards = cards
+                    });
                 }
 
                 _logger.LogInformation($"Successfully retrieved {groups.Count()} groups with their associated cards.");
-                return Ok(groups);
+                return Ok(result);
             }
             catch (Exception ex)
             {
@@ -119,6 +131,7 @@ namespace Backend.Controllers
                 return StatusCode(500, "An error occurred while retrieving groups.");
             }
         }
+
 
 
         // Other group-related actions...

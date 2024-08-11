@@ -11,7 +11,8 @@ namespace Backend.Business
 
         //void Update(Card card);
         public Task AddCardToGroupAsync(Card card);
-        public Task<IEnumerable<Card>> GetCardsByGroupIdAsync(string groupId);
+        // public Task<IEnumerable<Card>> GetCardsByGroupIdAsync(string groupId);
+        public Task<Card> GetCardByIdAsync(string cardId);
         // void Add(List<Card> cards);
         // void DeleteGroup(string groupName);
         // IEnumerable<Card> GetGroup(string groupName);
