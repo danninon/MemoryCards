@@ -29,6 +29,10 @@ namespace Backend.Business
 
         public async Task AddCardToGroupAsync(Card card)
         {
+            if (card.GroupID == null)
+            {
+                throw new Exception("Card.GroupID is null");
+            }
             var group = await _groupRepository.GetGroupByIdAsync(card.GroupID);
             if (group == null)
             {
