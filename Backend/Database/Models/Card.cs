@@ -30,8 +30,8 @@ namespace Backend.Database.Models
 
         public int CorrectAttempts { get; set; }
         public int TotalAttempts { get; set; }
-
+        public DateTime LastUpdated { get; set; }
         //public DateTime lastTimeRetrieved { get; set; }
-      
+
     }
 }

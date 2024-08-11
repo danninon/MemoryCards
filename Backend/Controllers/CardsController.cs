@@ -40,6 +40,9 @@ namespace Backend.Controllers
                     card.CorrectAttempts += 1;
                 }
 
+                // Update the LastUpdated field
+                card.LastUpdated = DateTime.UtcNow;
+
                 // Save the updated card back to the repository
                 await _cardRepository.UpdateCardAsync(card);
                 _logger.LogInformation($"Card {cardId} updated successfully. TotalAttempts: {card.TotalAttempts}, CorrectAttempts: {card.CorrectAttempts}");
