@@ -1,5 +1,6 @@
-using Backend.Business;
+using Backend.Business.Repositories;
 using Backend.Database;
+using Backend.Services;
 
 
 var builder = WebApplication.CreateBuilder(args);
@@ -33,6 +34,10 @@ builder.Services.Configure<DbConfig>(configuration.GetSection("studyGroupDataBas
 builder.Services.AddSingleton<IDbClient, DbClient>();
 builder.Services.AddTransient<ICardRepository, CardRepository>();
 builder.Services.AddTransient<IGroupRepository, GroupRepository>();
+
+// Register services
+builder.Services.AddScoped<CardSelectionService>();
+
 builder.Services.AddCors(options =>
 {
     options.AddPolicy("AllowAnyOrigin",

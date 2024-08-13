@@ -1,6 +1,6 @@
 ﻿using Backend.Database.Models;
 
-namespace Backend.Business
+namespace Backend.Business.Repositories
 {
     //add card
     //update card
@@ -11,11 +11,13 @@ namespace Backend.Business
 
         //void Update(Card card);
         public Task AddCardToGroupAsync(Card card);
-        // public Task<IEnumerable<Card>> GetCardsByGroupIdAsync(string groupId);
+
+        public Task<IEnumerable<Card>> GetCardsByGroupIdAsync(string groupId);
+
         public Task<Card> GetCardByIdAsync(string cardId);
 
         public Task UpdateCardAsync(Card card);
-        
+
         // void Add(List<Card> cards);
         // void DeleteGroup(string groupName);
         // IEnumerable<Card> GetGroup(string groupName);

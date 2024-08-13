@@ -2,7 +2,7 @@
 using MongoDB.Driver;
 using Backend.Database.Models;
 
-namespace Backend.Business
+namespace Backend.Business.Repositories
 {
     public class GroupRepository : IGroupRepository
     {

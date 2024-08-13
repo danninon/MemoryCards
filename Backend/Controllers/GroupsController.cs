@@ -1,5 +1,6 @@
-﻿using Backend.Business;
+﻿using Backend.Business.Repositories;
 using Backend.Database.Models;
+using Backend.Services;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Backend.Controllers
@@ -11,14 +12,18 @@ namespace Backend.Controllers
         private readonly ICardRepository _cardRepository;
         private readonly IGroupRepository _groupRepository;
         private readonly ILogger<GroupController> _logger;
+        private readonly CardSelectionService _cardSelectionService;
+
         public GroupController(
             IGroupRepository groupRepository,
             ICardRepository cardRepository,
-            ILogger<GroupController> logger // Inject the logger)
+            ILogger<GroupController> logger, // Inject the logger)
+            CardSelectionService cardSelectionService
         ){
             _groupRepository = groupRepository;
             _cardRepository = cardRepository;
             _logger = logger; // Assign the logger
+            _cardSelectionService = cardSelectionService;
         }
 
         [HttpPost]
@@ -48,7 +53,7 @@ namespace Backend.Controllers
         }
 
 
-        [HttpPost("{groupId}/cards")]
+        [HttpPost("{groupId}/card")]
         public async Task<IActionResult> AddCardToGroup(string groupId, [FromBody] Card card)
         {
             // Log the input at the beginning of the function
@@ -97,7 +102,7 @@ namespace Backend.Controllers
                 if (groups == null || !groups.Any())
                 {
                     _logger.LogWarning("No groups found in the database.");
-                    return NotFound("No groups found.");
+                    return Ok("No groups found.");
                 }
 
                 var result = new List<object>();
@@ -132,7 +137,38 @@ namespace Backend.Controllers
             }
         }
 
+        [HttpPost("draw-cards")]
+        public async Task<IActionResult> GetSelectedCards([FromBody] DrawCardsRequest request)
+        {
+            // Log the start of the process
+            _logger.LogInformation("Received request to draw cards.");
 
+            try
+            {
+                // Use the CardSelectionService to perform the card selection logic
+                var selectedCards = await _cardSelectionService.SelectCardsAsync(request.GroupIds, request.NumberOfCards);
+
+                // Return the selected cards as the response
+                return Ok(selectedCards);
+            }
+            catch (Exception ex)
+            {
+                // Log and handle any exceptions that occur during the process
+                _logger.LogError(ex, "An error occurred while selecting cards.");
+                return StatusCode(500, "An error occurred while processing your request.");
+            }
+        }
+
+
+
+        // Split into two gro
+
+        public class DrawCardsRequest
+    {
+        public List<string> GroupIds { get; set; }
+        public int NumberOfCards { get; set; }
+       
+    }
 
         // Other group-related actions...
     }
