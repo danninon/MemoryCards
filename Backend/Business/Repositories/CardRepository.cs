@@ -4,7 +4,7 @@ using Backend.Database;
 using Backend.Database.Models;
 using Backend.Controllers;
 
-namespace Backend.Business
+namespace Backend.Business.Repositories
 {
     public class CardRepository : ICardRepository
     {
@@ -57,9 +57,17 @@ namespace Backend.Business
 
         public async Task UpdateCardAsync(Card card)
         {
+            card.LastUpdated = DateTime.UtcNow;
             await _cardsCollection.ReplaceOneAsync(c => c.Id == card.Id, card);
         }
 
+        public async Task<IEnumerable<Card>> GetCardsByGroupIdAsync(string groupId)
+        {
+            // Query the collection to find all cards with the specified GroupID
+            var cards = await _cardsCollection.Find(card => card.GroupID == groupId).ToListAsync();
+
+            return cards;
+        }
 
         //public void updateCard(string cardId, bool didSucceed)
         //{

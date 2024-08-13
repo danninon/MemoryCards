@@ -1,6 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
-using Backend.Business;
 using Backend.Database.Models;
+using Backend.Business.Repositories;
 
 
 namespace Backend.Controllers
@@ -41,7 +41,7 @@ namespace Backend.Controllers
                 }
 
                 // Update the LastUpdated field
-                card.LastUpdated = DateTime.UtcNow;
+            
 
                 // Save the updated card back to the repository
                 await _cardRepository.UpdateCardAsync(card);

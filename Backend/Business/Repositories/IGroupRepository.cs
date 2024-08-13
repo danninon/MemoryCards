@@ -1,7 +1,7 @@
 ﻿using Backend.Database.Models;
 
 
-namespace Backend.Business
+namespace Backend.Business.Repositories
 {
     public interface IGroupRepository
     {
